@@ -1,5 +1,5 @@
 {
-  
+
   "env": {
     "browser": true,
     "node": true,
@@ -9,21 +9,49 @@
   "plugins": ["react"],
 
   "ecmaFeatures": {
-    "modules": true,
+    "arrowFunctions": true,
+    "binaryLiterals": true,
+    "blockBindings": true,
     "classes": true,
+    "defaultParams": true,
+    "destructuring": true,
+    "forOf": true,
+    "generators": true,
+    "modules": true,
+    "objectLiteralComputedProperties": true,
+    "objectLiteralDuplicateProperties": true,
+    "objectLiteralShorthandMethods": true,
+    "objectLiteralShorthandProperties": true,
+    "octalLiterals": true,
+    "regexUFlag": true,
+    "regexYFlag": true,
+    "spread": true,
+    "superInFunctions": true,
+    "templateStrings": true,
+    "unicodeCodePointEscapes": true,
+    "globalReturn": true,
     "jsx": true
   },
-  
+
   "rules": {
 
-    "quotes": [2, "single"],
-    "eol-last": [0],
-    "no-mixed-requires": [0],
-    "no-underscore-dangle": [0],
-    "no-alert": [0],
-    "new-cap": [0],
+    // errors
     "no-empty": [0],
+
+    // best practices
+    "no-alert": [0],
+
+    // styling
+    "quotes": [1, "single"],
+    "eol-last": [0],
+    "no-underscore-dangle": [0],
+    "new-cap": [0],
     "camelcase": 1,
+
+    // vars
+    "no-undefined": 2,
+    "no-unused-vars": 2,
+    "no-use-before-define": 2,
 
     // eslint-plugin-react
     "react/display-name": 0,
