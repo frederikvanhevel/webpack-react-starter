@@ -24,4 +24,4 @@ Bash scripts to perform the build operation.
 
 #### src
 
-Contains the source of your project. The `src/index.js` is the main entry point.
+Contains the source files. The `src/index.js` is the main entry point.
