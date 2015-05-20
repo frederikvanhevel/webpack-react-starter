@@ -1,6 +1,6 @@
 {
   "name": "webpack-react-starter",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A minimal webpack + react ES6 starter template",
   "main": "./src/index.js",
   "scripts": {
