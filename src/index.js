@@ -1,4 +1,2 @@
 // use this entry point to export your modules
-import HelloWorld from './HelloWorld';
-
-export {HelloWorld}
+export {default as HelloWorld} from './HelloWorld';
