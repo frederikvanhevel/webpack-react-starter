@@ -39,7 +39,7 @@ Source of the project. Since we're keeping the stylesheet together with the comp
   |-- index.js
 ```
 
-### src/index.js
+#### src/index.js
 
 The `./src/index.js` is the main entry point. Use it to export your modules.
 
