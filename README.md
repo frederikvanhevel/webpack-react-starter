@@ -1,6 +1,14 @@
 # webpack-react-starter
 A minimal webpack + react ES6 starter template.
 
+What's included:
+
+- Tasks scripts using `npm run`
+- Babel compiler ES6 to ES5
+- ES6 lint and eslint-plugin-react
+- CSS support using style-loder and css-loader
+- SVG, PNG, JPG, GIF and fonts via url-loader
+
 ## Installation
 
 ```
@@ -11,6 +19,14 @@ npm run build
 This package is also on NPM `npm i webpack-react-starter`.
 
 ## Development
+
+## Tasks
+
+- `npm run build`
+- `npm run examples`
+- `npm run lint`
+
+## File Structure
 
 #### dist
 
