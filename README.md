@@ -4,10 +4,10 @@ A minimal webpack + react ES6 starter template.
 What's included:
 
 - Tasks scripts using `npm run`
-- Babel compiler ES6 to ES5
-- ES6 lint and eslint-plugin-react
-- CSS support using style-loder and css-loader
-- SVG, PNG, JPG, GIF and fonts via url-loader
+- [Babel](babeljs.io) compiler ES6 to ES5
+- [ES6 lint](http://eslint.org/) and [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react)
+- CSS support via [style-loder](https://github.com/webpack/style-loader) and [css-loader](https://github.com/webpack/css-loader)
+- SVG, PNG, JPG, GIF and fonts via [url-loader](https://github.com/webpack/url-loader)
 
 ## Installation
 
