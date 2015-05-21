@@ -45,13 +45,13 @@ module.exports = {
       {
         test: /\.js$/,
         loaders: ['eslint'],
-        include: [new RegExp(path.join(__dirname, 'src'))]
+        include: [new RegExp(path.join(__dirname, '../src'))]
       }
     ]
   },
 
   eslint: {
-    configFile: '.eslintrc'
+    configFile: '../.eslintrc'
   }
   
 };
