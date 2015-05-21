@@ -51,7 +51,8 @@ module.exports = {
   },
 
   eslint: {
-    configFile: '../.eslintrc'
+    configFile: '../.eslintrc',
+    emitError: true
   }
   
 };
