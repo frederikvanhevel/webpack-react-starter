@@ -4,7 +4,6 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var embedFileSize = 65536;
 
 module.exports = {
-
   entry: [
     'webpack/hot/dev-server',
     './index'
