@@ -1,9 +1,9 @@
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var embedFileSize = 65536;
 
 module.exports = {
-
   entry: [
     'webpack/hot/dev-server',
     './index'
@@ -31,7 +31,15 @@ module.exports = {
   module: {
     loaders: [
       {test: /\.js$/, exclude: /node_modules/, loaders: ['babel-loader']},
-      {test: /\.css$/, loader: 'style-loader!css-loader'}
+      {test: /\.css$/, loader: 'style-loader!css-loader'},
+      {test: /\.svg/, loader: 'url?limit=' + embedFileSize + '&mimetype=image/svg+xml'},
+      {test: /\.png$/, loader: 'url?limit=' + embedFileSize + '&mimetype=image/png'},
+      {test: /\.jpg/, loader: 'url?limit=' + embedFileSize + '&mimetype=image/jpeg'},
+      {test: /\.gif/, loader: 'url?limit=' + embedFileSize + '&mimetype=image/gif'},
+      {
+        test: /\.(otf|eot|ttf|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'url?limit=' + embedFileSize
+      }
     ],
     preLoaders: [
       {
