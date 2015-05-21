@@ -20,13 +20,13 @@ This package is also on NPM `npm i webpack-react-starter`.
 
 ## Development
 
-## Tasks
+### Tasks
 
 - `npm run build`
 - `npm run examples`
 - `npm run lint`
 
-## File Structure
+### File Structure
 
 #### dist
 
