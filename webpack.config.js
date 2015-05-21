@@ -1,9 +1,9 @@
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var embedFileSize = 65536;
 
 module.exports = {
-  
   entry: ['./src/index'],
 
   output: {
