@@ -1,11 +1,12 @@
 {
   "name": "webpack-react-starter",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A minimal webpack + react ES6 starter template",
   "main": "./src/index.js",
   "scripts": {
     "build": "./scripts/build",
-    "examples": "./scripts/examples"
+    "examples": "./scripts/examples",
+    "lint": "./scripts/lint"
   },
   "repository": {
     "type": "git",
