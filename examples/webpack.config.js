@@ -1,57 +1,25 @@
 var path = require('path');
 var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var embedFileSize = 65536;
+var _ = require('lodash');
+var config = require('../webpack.config.js');
 
-module.exports = {
-  entry: [
-    'webpack/hot/dev-server',
-    './index'
-  ],
-
+var development = _.extend({}, config, {
+  devtool: 'eval',
+  entry: ['webpack/hot/dev-server','./index.js'],
   output: {
     path: __dirname,
     filename: 'bundle.js',
     publicPath: '/'
   },
-
-  resolve: {
-    modulesDirectories: ['node_modules', '../src'],
-    extensions: ['', '.js', '.jsx']
-  },
-
-  plugins: [
-    new ExtractTextPlugin('index.css'),
+  plugins: config.plugins.concat(
     new webpack.NormalModuleReplacementPlugin(
       /^webpack-react-starter$/,
       '../src/index'
     )
-  ],
-
-  module: {
-    loaders: [
-      {test: /\.js$/, exclude: /node_modules/, loaders: ['babel-loader']},
-      {test: /\.css$/, loader: 'style-loader!css-loader'},
-      {test: /\.svg/, loader: 'url?limit=' + embedFileSize + '&mimetype=image/svg+xml'},
-      {test: /\.png$/, loader: 'url?limit=' + embedFileSize + '&mimetype=image/png'},
-      {test: /\.jpg/, loader: 'url?limit=' + embedFileSize + '&mimetype=image/jpeg'},
-      {test: /\.gif/, loader: 'url?limit=' + embedFileSize + '&mimetype=image/gif'},
-      {
-        test: /\.(otf|eot|ttf|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'url?limit=' + embedFileSize
-      }
-    ],
-    preLoaders: [
-      {
-        test: /\.js$/,
-        loaders: ['eslint'],
-        include: [new RegExp(path.join(__dirname, '../src'))]
-      }
-    ]
-  },
-
+  ),
   eslint: {
     configFile: '../.eslintrc'
   }
-  
-};
+});
+
+module.exports = development;
