@@ -60,10 +60,4 @@ var config = {
 
 };
 
-// var development = _.extend({}, config, {
-//   entry: ['webpack/hot/dev-server','./app/index.js'],
-//   devtool: 'eval'
-// });
-
-// module.exports = development;
 module.exports = config;
