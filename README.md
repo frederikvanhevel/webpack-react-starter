@@ -5,7 +5,7 @@ What's included:
 
 - Tasks scripts using `npm run`
 - [Babel](babeljs.io) compiler ES6 to ES5
-- [ES6 lint](http://eslint.org/) and [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react)
+- [ES6 lint](http://eslint.org/), [babel-eslint](https://github.com/babel/babel-eslint) and [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react)
 - CSS support via [style-loder](https://github.com/webpack/style-loader) and [css-loader](https://github.com/webpack/css-loader)
 - SVG, PNG, JPG, GIF and fonts via [url-loader](https://github.com/webpack/url-loader)
 
@@ -51,7 +51,7 @@ Source of the project. Since we're keeping the stylesheet together with the comp
     |-- index.css
   |-- SearchField
     |-- index.js
-    |-- index.css  
+    |-- index.css
   |-- index.js
 ```
 

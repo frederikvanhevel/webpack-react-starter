@@ -1,6 +1,6 @@
 {
   "name": "webpack-react-starter",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "A minimal webpack + react ES6 starter template",
   "main": "./src/index.js",
   "scripts": {
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/henriquea/webpack-react-starter",
   "dependencies": {
+    "lodash": "^3.9.3",
     "react": "^0.13.3"
   },
   "devDependencies": {

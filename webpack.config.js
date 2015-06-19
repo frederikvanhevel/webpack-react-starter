@@ -1,9 +1,10 @@
 var path = require('path');
 var webpack = require('webpack');
+var _ = require('lodash');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var embedFileSize = 65536;
 
-module.exports = {
+var config = {
   entry: ['./src/index'],
 
   output: {
@@ -58,3 +59,5 @@ module.exports = {
   }
 
 };
+
+module.exports = config;
